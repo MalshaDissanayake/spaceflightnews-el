@@ -1,3 +1,4 @@
+#Import necessary libraries
 import requests
 import pandas as pd
 import pyarrow as pa
@@ -37,4 +38,5 @@ combined_df = pd.DataFrame(all_data)
 
 # Save DataFrame as Parquet file
 pq.write_table(pa.Table.from_pandas(combined_df), 'spaceflightnews_combined_articles.parquet')
+#print Parquet file
 print("Combined spaceflightnews articles data saved to spaceflightnews_combined_articles.parquet")
