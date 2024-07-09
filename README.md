@@ -24,6 +24,7 @@ The script requires the following Python libraries:
 - `pyarrow`
 
 You can install these dependencies using `pip`:
+
 ```sh
     pip install requests pandas pyarrow
 ```
